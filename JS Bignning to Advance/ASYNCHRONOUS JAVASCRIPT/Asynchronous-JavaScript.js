@@ -173,15 +173,16 @@
 // Here Start Promise
 // For Testing Promise Remove 1 Value from Below Array 
 // "Producing code" is code that can take some time
-const kitchen = ["Chicken", "Rice", "Spices", "Oil"];
+// *****
+// const kitchen = ["Chicken", "Rice", "Spices", "Oil"];
 
-const Biryani = new Promise((resolve, reject) => {
-    if (kitchen.includes("Chicken") && kitchen.includes("Rice") && kitchen.includes("Gas") && kitchen.includes("Spices") && kitchen.includes("Oil")) {
-        resolve("Hmm! Biryani Ban Skti Hai.") // This is Callback Method
-    } else {
-        reject("Biryani Cancel.")             // This is Callback Methods
-    }
-})
+// const Biryani = new Promise((resolve, reject) => {
+//     if (kitchen.includes("Chicken") && kitchen.includes("Rice") && kitchen.includes("Gas") && kitchen.includes("Spices") && kitchen.includes("Oil")) {
+//         resolve("Hmm! Biryani Ban Skti Hai.") // This is Callback Method
+//     } else {
+//         reject("Biryani Cancel.")             // This is Callback Methods
+//     }
+// })
 
 
 
@@ -207,3 +208,5 @@ const Biryani = new Promise((resolve, reject) => {
 //     }).catch((reject)=>{
 //         console.log("Biryani Cancel Because Material is Missing");
 //     })
+
+///
