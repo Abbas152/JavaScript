@@ -290,28 +290,28 @@
 // then()
 // then Method Always Return Promise. Please Comment Above Code
 
-function myPromise() {
-    return new Promise((resolve, reject) => {
-        resolve("Hey");
-    })
-}
+// function myPromise() {
+//     return new Promise((resolve, reject) => {
+//         resolve("Hey");
+//     })
+// }
 
-myPromise()
-.then((value)=>{
-    console.log(value);
-    value += " Buddy";
-    return value  // It is Return Promise Like retrun Promise.resolve(value)
-})
+// myPromise()
+// .then((value)=>{
+//     console.log(value);
+//     value += " Buddy";
+//     return value  // It is Return Promise Like retrun Promise.resolve(value)
+// })
 
-.then((value)=>{
-    console.log(value);
-    value += " Are You Ok";
-    return value;
-})  
+// .then((value)=>{
+//     console.log(value);
+//     value += " Are You Ok";
+//     return value;
+// })  
 
-.then((value)=>{
-    console.log(value);
-})  
+// .then((value)=>{
+//     console.log(value);
+// })  
   
 
   
