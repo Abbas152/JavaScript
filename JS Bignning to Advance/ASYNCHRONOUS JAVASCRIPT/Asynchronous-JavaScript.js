@@ -363,3 +363,12 @@
 // 2.) fetch API (new way of doing)
 // 3.) axios (this is third party library)
 
+
+// ******
+// 1.) xmlHTTPRequest (old way of doing)
+// Start Here 
+// First of All We Need XMLHttpRequest Object Which Contains Some Methods and We can Use That Methods.
+
+// Below Here We Call Constructor of XMLHttpRequest Object, And Store All This Object Methods in XHR
+const XHR = new XMLHttpRequest();
+console.log(XHR);
