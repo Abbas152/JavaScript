@@ -173,7 +173,7 @@
 // Here Start Promise
 // For Testing Promise Remove 1 Value from Below Array 
 // "Producing code" is code that can take some time
-// *****
+// // *****
 // const kitchen = ["Chicken", "Rice", "Spices", "Oil"];
 
 // const Biryani = new Promise((resolve, reject) => {
@@ -183,7 +183,6 @@
 //         reject("Biryani Cancel.")             // This is Callback Methods
 //     }
 // })
-
 
 
 // "Consuming code" is code that must wait for the result
@@ -201,11 +200,11 @@
 //         console.log("Biryani Cancel Because Material is Missing");
 //     })
 
-//     // Example With then() and catch() methods, please Comment Above Code
+    // // Example With then() and catch() methods, please Comment Above Code
 
-//     Biryani.then((resolve)=>{
-//         console.log("Damn I am so Hungry, Let's see What we Have?", resolve);
-//     }).catch((reject)=>{
-//         console.log("Biryani Cancel Because Material is Missing");
-//     })
+    // Biryani.then((resolve)=>{
+    //     console.log("Damn I am so Hungry, Let's see What we Have?", resolve);
+    // }).catch((reject)=>{
+    //     console.log("Biryani Cancel Because Material is Missing");
+    // })
 
