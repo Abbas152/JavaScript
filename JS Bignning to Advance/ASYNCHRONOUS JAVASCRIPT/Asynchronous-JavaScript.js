@@ -178,7 +178,7 @@
 
 // const Biryani = new Promise((resolve, reject) => {
 //     if (kitchen.includes("Chicken") && kitchen.includes("Rice") && kitchen.includes("Gas") && kitchen.includes("Spices") && kitchen.includes("Oil")) {
-//         resolve("Hmm! Biryani Ban Skti Hai.") // This is Callback Method
+//         resolve("Hmm! Biryani Ban Skti Hai.") // This is Callback Methods
 //     } else {
 //         reject("Biryani Cancel.")             // This is Callback Methods
 //     }
@@ -200,11 +200,50 @@
 //         console.log("Biryani Cancel Because Material is Missing");
 //     })
 
-    // // Example With then() and catch() methods, please Comment Above Code
+// // Example With then() and catch() methods, please Comment Above Code
 
-    // Biryani.then((resolve)=>{
-    //     console.log("Damn I am so Hungry, Let's see What we Have?", resolve);
-    // }).catch((reject)=>{
-    //     console.log("Biryani Cancel Because Material is Missing");
-    // })
+// Biryani.then((resolve)=>{
+//     console.log("Damn I am so Hungry, Let's see What we Have?", resolve);
+// }).catch((reject)=>{
+//     console.log("Biryani Cancel Because Material is Missing");
+// })
+
+
+
+
+
+// *******************
+// Promise With Function 
+function MyBiryani() {
+    const kitchen = ["Chicken", "Rice", "Gas", "Spices", "Oil"];
+    const Biryani = new Promise((resolve, reject) => {
+        if (kitchen.includes("Chicken") && kitchen.includes("Rice") && kitchen.includes("Gas") && kitchen.includes("Spices") && kitchen.includes("Oil")) {
+            resolve("Hmm! Biryani Ban Skti Hai.") // This is Callback Methods
+        } else {
+            reject("Biryani Cancel.")             // This is Callback Methods
+        }
+    })
+    return Biryani;
+}
+
+// MyBiryani().then(
+//         // 1st Callbacks in then() method for resolve Promise
+//         (MyBiryani) => {
+//             console.log("Damn I am so Hungry, Let's see What we Have?", MyBiryani);
+//         },
+//         //2nd Callbacks in then() method for reject Promise
+//         (error) => { 
+//             console.log("Biryani Cancel Because Material is Missing");
+//         })
+
+
+
+// // Example With then() and catch() methods, please Comment Above Code
+// MyBiryani().then((resolve)=>{
+//         console.log("Damn I am so Hungry, Let's see What we Have?", resolve);
+//     }).catch((reject)=>{
+//         console.log("Biryani Cancel Because Material is Missing");
+//     })
+    
+    
 
