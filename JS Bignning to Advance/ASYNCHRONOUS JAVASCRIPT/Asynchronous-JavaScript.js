@@ -280,14 +280,38 @@
 // Promise.resolve
 // Promise chaining
 
-
+// const myPromise = Promise.resolve(1);
+// myPromise.then((value)=>{
+//     console.log(value);
+// })
 
 
 
 // then()
-// then method hamesha promise return karta hai
+// then Method Always Return Promise. Please Comment Above Code
 
+function myPromise() {
+    return new Promise((resolve, reject) => {
+        resolve("Hey");
+    })
+}
+
+myPromise()
+.then((value)=>{
+    console.log(value);
+    value += " Buddy";
+    return value
+})
+
+.then((value)=>{
+    console.log(value);
+    value += " Are You Ok";
+    return value;
+})  
+
+.then((value)=>{
+    console.log(value);
+})  
+  
 
   
-  
-
