@@ -172,8 +172,9 @@
 
 // Here Start Promise
 // For Testing Promise Remove 1 Value from Below Array 
-// "Producing code" is code that can take some time
 // // *****
+// "Producing code" is code that can take some time
+
 // const kitchen = ["Chicken", "Rice", "Spices", "Oil"];
 
 // const Biryani = new Promise((resolve, reject) => {
@@ -247,4 +248,68 @@
 //     })
     
     
+
+
+
+// *******************
+// // Promise and setTimeout With Function 
+
+// function myPromise() {
+//    const Result = new Promise((resolve,reject)=>{
+//         const value = true;
+//         setTimeout(() => {
+//             if (value) {
+//                 resolve();
+//             }else{
+//                 reject();
+//             }
+//         }, 2000);
+//     })
+//     return Result;
+// }
+
+// myPromise().then(()=>{console.log("Resolved")})
+// .catch(()=>{console.log("Reject")})
+
+
+
+
+
+
+// *******************
+// Promise.resolve
+// Promise chaining
+
+// const myPromise = Promise.resolve(5);
+// myPromise.then(value=>{
+//   console.log(value);
+// })
+
+// then()
+// then method hamesha promise return karta hai
+
+
+// function myPromise(){
+//     return new Promise((resolve, reject)=>{
+//       resolve("foo");
+//     })
+//   }
+  
+//   myPromise()
+//     .then((value)=>{
+//       console.log(value);
+//       value += "bar";
+//       return value
+//     })
+//     .then((value) =>{
+//       console.log(value);
+//       value += "baaz";
+//       return value;
+//     })
+//     .then(value=>{
+//       console.log(value);
+//     })
+  
+  
+  
 
