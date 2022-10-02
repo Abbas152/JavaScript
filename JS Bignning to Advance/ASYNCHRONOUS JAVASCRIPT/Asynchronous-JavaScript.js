@@ -213,18 +213,19 @@
 
 
 // *******************
-// Promise With Function 
-function MyBiryani() {
-    const kitchen = ["Chicken", "Rice", "Gas", "Spices", "Oil"];
-    const Biryani = new Promise((resolve, reject) => {
-        if (kitchen.includes("Chicken") && kitchen.includes("Rice") && kitchen.includes("Gas") && kitchen.includes("Spices") && kitchen.includes("Oil")) {
-            resolve("Hmm! Biryani Ban Skti Hai.") // This is Callback Methods
-        } else {
-            reject("Biryani Cancel.")             // This is Callback Methods
-        }
-    })
-    return Biryani;
-}
+// // Promise With Function 
+
+// function MyBiryani() {
+//     const kitchen = ["Chicken", "Rice", "Gas", "Spices", "Oil"];
+//     const Biryani = new Promise((resolve, reject) => {
+//         if (kitchen.includes("Chicken") && kitchen.includes("Rice") && kitchen.includes("Gas") && kitchen.includes("Spices") && kitchen.includes("Oil")) {
+//             resolve("Hmm! Biryani Ban Skti Hai.") // This is Callback Methods
+//         } else {
+//             reject("Biryani Cancel.")             // This is Callback Methods
+//         }
+//     })
+//     return Biryani;
+// }
 
 // MyBiryani().then(
 //         // 1st Callbacks in then() method for resolve Promise
