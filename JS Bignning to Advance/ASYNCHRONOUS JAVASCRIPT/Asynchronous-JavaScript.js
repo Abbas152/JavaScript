@@ -300,7 +300,7 @@ myPromise()
 .then((value)=>{
     console.log(value);
     value += " Buddy";
-    return value
+    return value  // It is Return Promise Like retrun Promise.resolve(value)
 })
 
 .then((value)=>{
