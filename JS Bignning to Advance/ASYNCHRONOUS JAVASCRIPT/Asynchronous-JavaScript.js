@@ -36,7 +36,8 @@
 
 
 
-// ********************
+// *********************************************
+// *********************************************
 // // Example with setTimeout()
 // Here We can see Script Start then print script end print immediately and after 5 sec setTimeout Execute on console.
 // // This Behaviour is Called Ayschnronous Programming 
@@ -51,7 +52,8 @@
 
 
 
-// ********************
+// *********************************************
+// *********************************************
 // // Another Example with setTimeout()  Please Comment Above Example Code
 
 // console.log("Script Start");
@@ -79,7 +81,8 @@
 
 
 
-// ********************
+// *********************************************
+// *********************************************
 // setInterval()
 // Waiting for Intervals:
 // When using the JavaScript function setInterval(), you can specify a callback function to be executed for each interval:
@@ -96,7 +99,8 @@
 
 
 
-// ********************
+// *********************************************
+// *********************************************
 // Callbacks in Synchronous Programming
 // Function () takes callbacks as function and arguments, Example Below
 
@@ -124,7 +128,8 @@
 
 
 
-// ********************
+// *********************************************
+// *********************************************
 // Callbacks in Asynchronous Programming
 // Callbacks
 // Callbacks hell  // Example of Change Text With Color in Intervals, Nested stTimeout , This code knows as callbacks Hell, Means Nested in Nested in Nested
@@ -136,7 +141,8 @@
 
 
 
-// ********************
+// *********************************************
+// *********************************************
 // Promises
 // "I Promise a Result!"
 
@@ -213,7 +219,8 @@
 
 
 
-// *******************
+// ********************************************
+// ********************************************
 // // Promise With Function 
 
 // function MyBiryani() {
@@ -251,7 +258,8 @@
 
 
 
-// *******************
+// ********************************************
+// ********************************************
 // // Promise and setTimeout With Function 
 
 // function myPromise() {
@@ -276,7 +284,8 @@
 
 
 
-// *******************
+// ********************************************
+// ********************************************
 // Promise.resolve
 // Promise chaining
 
@@ -315,3 +324,14 @@
   
 
   
+
+
+
+// *********************************************
+// *********************************************
+// AJAX
+// AJAX is a developer's dream, because you can:
+
+// Read data from a web server - after the page has loaded
+// Update a web page without reloading the page
+// Send data to a web server - in the background

@@ -21,6 +21,12 @@
     <h1 class="heading9">Hello World</h1>
     <h1 class="heading10">Hello World</h1>
 
+
+
+
+
+ <!-- **************** -->
+
     <script>
         const heading1 = document.querySelector(".heading1");
         const heading2 = document.querySelector(".heading2");
@@ -34,6 +40,8 @@
         const heading10 = document.querySelector(".heading10");
 
 
+
+// ****************
         // // This is Callbacks Hell 
         // setTimeout(() => {
         //     heading1.textContent = "heading1";
@@ -79,48 +87,85 @@
 
 
 
-        // This is Complete Pyramid Doom 
-        // Please Comment Above Code 
-        function changeTextandColor(element, txt, color, time, onSuccess, onFailure) {
-            setTimeout(() => {
-                if (element) {
-                    element.textContent = txt;
-                    element.style.color = color;
-                    if (onSuccess) {
-                        onSuccess();
-                    }
-                } else {
-                    if (onFailure) {
-                        onFailure();
-                    }
-                }
-            }, time)
-        }
 
-        changeTextandColor(heading1,"heading1","cyan",1000,()=>{
-            changeTextandColor(heading2,"heading2","purple",1000,()=>{
-                changeTextandColor(heading3,"heading3","red",1000,()=>{
-                    changeTextandColor(heading4,"heading4","pink",1000,()=>{
-                        changeTextandColor(heading5,"heading5","green",1000,()=>{
-                            changeTextandColor(heading6,"heading6","blue",1000,()=>{
-                                changeTextandColor(heading7,"heading7","brwon",1000,()=>{
-                                    changeTextandColor(heading8,"heading8","violet",1000,()=>{
-                                        changeTextandColor(heading9,"heading9","yellow",1000,()=>{
-                                            changeTextandColor(heading10,"heading10","grey",1000,()=>{
-                                            
-                                            } , () => { console.log("Element Does Not Exist") } )
-                                        } , () => { console.log("Element Does Not Exist") } )
-                                    } , () => { console.log("Element Does Not Exist") } )
-                                } , () => { console.log("Element Does Not Exist") } )
-                            } , () => { console.log("Element Does Not Exist") } )
-                        } , () => { console.log("Element Does Not Exist") } )
-                    } , () => { console.log("Element Does Not Exist") } )
-                } , () => { console.log("Element Does Not Exist") } )
-            } , () => { console.log("Element Does Not Exist") } )
-        } , () => { console.log("Element Does Not Exist") } )
+// ****************
+        // // This is Complete Pyramid Doom 
+        // // Please Comment Above Code 
+        // function changeTextandColor(element, txt, color, time, onSuccess, onFailure) {
+        //     setTimeout(() => {
+        //         if (element) {
+        //             element.textContent = txt;
+        //             element.style.color = color;
+        //             if (onSuccess) {
+        //                 onSuccess();
+        //             }
+        //         } else {
+        //             if (onFailure) {
+        //                 onFailure();
+        //             }
+        //         }
+        //     }, time)
+        // }
 
+        // changeTextandColor(heading1,"heading1","cyan",1000,()=>{
+        //     changeTextandColor(heading2,"heading2","purple",1000,()=>{
+        //         changeTextandColor(heading3,"heading3","red",1000,()=>{
+        //             changeTextandColor(heading4,"heading4","pink",1000,()=>{
+        //                 changeTextandColor(heading5,"heading5","green",1000,()=>{
+        //                     changeTextandColor(heading6,"heading6","blue",1000,()=>{
+        //                         changeTextandColor(heading7,"heading7","brown",1000,()=>{
+        //                             changeTextandColor(heading8,"heading8","violet",1000,()=>{
+        //                                 changeTextandColor(heading9,"heading9","yellow",1000,()=>{
+        //                                     changeTextandColor(heading10,"heading10","grey",1000,()=>{
+
+        //                                     } , () => { console.log("Element Does Not Exist") } )
+        //                                 } , () => { console.log("Element Does Not Exist") } )
+        //                             } , () => { console.log("Element Does Not Exist") } )
+        //                         } , () => { console.log("Element Does Not Exist") } )
+        //                     } , () => { console.log("Element Does Not Exist") } )
+        //                 } , () => { console.log("Element Does Not Exist") } )
+        //             } , () => { console.log("Element Does Not Exist") } )
+        //         } , () => { console.log("Element Does Not Exist") } )
+        //     } , () => { console.log("Element Does Not Exist") } )
+        // } , () => { console.log("Element Does Not Exist") } )
+
+
+
+
+// ****************
+        // // Change Text With Colors Using Promises
+
+        // function changeTWCmyPromise(element, txt, color, time) {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             if (element) {
+        //                 element.textContent = txt;
+        //                 element.style.color = color;
+        //                 resolve();
+        //             } else {
+        //                 reject("Element Not Found");
+        //             }
+        //         }, time)
+        //     })
+        // }
+
+        // const returnedPromise = changeTWCmyPromise(heading1, "heading1", "cyan", 2000);
+        // returnedPromise
+        //     .then(() => { return changeTWCmyPromise(heading2, "heading2", "purple", 1000) })
+        //     .then(() => { return changeTWCmyPromise(heading3, "heading3", "red", 1000) })
+        //     .then(() => { return changeTWCmyPromise(heading4, "heading4", "pink", 1000) })
+        //     .then(() => { return changeTWCmyPromise(heading5, "heading5", "green", 1000) })
+        //     .then(() => { return changeTWCmyPromise(heading6, "heading6", "blue", 1000) })
+        //     .then(() => { return changeTWCmyPromise(heading7, "heading7", "brown", 1000) })
+        //     .then(() => { return changeTWCmyPromise(heading8, "heading8", "violet", 1000) })
+        //     .then(() => { return changeTWCmyPromise(heading9, "heading9", "yellow", 1000) })
+        //     .then(() => { return changeTWCmyPromise(heading10, "heading10", "grey", 1000) })
+        //     .catch((error)=>{
+        //         alert(error);
+        //     })
+
+        
     </script>
 </body>
 
 </html>
-
