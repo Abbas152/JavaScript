@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentals</title>
+    <script>
+        // var num1 = 99;
+        // num1++;
+        // num1+=10;
+        // --num1;
+        // 10=-num1;
+        // document.write(num1);
+
+        // var num1= 96;
+        // var num2= 90;
+        // document.write(num1+num2);
+
+
+        // Array with for Loop
+        // var arr = [5, 4, 3, 2, 1, 0];
+        // arr[0] = 90;
+
+        // for (var i = 0; i < arr.length; i++) {
+        //     document.write(arr[i] + "<br>");
+        // }
+
+        // x in Array  // You can Change Variable with x
+        // var arr = [5, 4, 3, 2, 1, 0];
+        // arr[0] = 90;
+
+        //     for(x in arr){
+        //         document.write(arr[x] + "<br>");
+        //     }
+
+        // Accociated Array 
+        // var students = [];
+        // students["Ali"] = 98;
+        // students["Abbas"] = 85;
+        // students["Zaini"] = 70;
+        // students["Ubaid"] = 65;
+        // students["KaKa"] = 55;
+
+        // for(std in students){
+        //     document.write("The Marks of " +std +students[std]+ "<br>");
+        // }
+
+        // var day = prompt("Enter day Number");
+        // switch (parseInt(day)) {
+        //     case 1:
+        //         document.write("Monday");
+        //         break;
+        //     case 2:
+        //         document.write("Tuesday");
+        //         break;
+        //     case 3:
+        //         document.write("Wednesday");
+        //         break;
+        //     case 4:
+        //         document.write("Thursday");
+        //         break;
+        //     case 5:
+        //         document.write("Friday");
+        //         break;
+        //     case 6:
+        //         document.write("Saturday");
+        //         break;
+        //     case 7:
+        //         document.write("Sunday");
+        //         break;
+
+        //     default:
+        //         document.write("Invalid String");
+        //         break;
+        // }
+
+        // Functions Start Here 
+
+        // var a = function sum(a, b) {
+        //     return a + b;
+        // }
+        //  document.write(sum(5,10));
+        //  document.write(sum(5, sum(5,10)));
+        // document.write(a(5,1));
+
+
+        // Objects Start Here 
+
+        // var Employee = new Object();
+        // Employee.name = "";
+        // Employee.age = 0;
+        // Employee.setAge = function (age) {
+        //     Employee.age = age;
+        // }
+        // Employee.setName = function (name) {
+        //     Employee.name = name;
+        // }
+
+        // Employee.setName("Ali");
+        // Employee.setAge(23);
+        // document.write(Employee.name + "<br>");
+        // document.write(Employee.age);
+
+        // Modern Method to Use Objects 
+        var Employee = {
+            name: "",
+            age: 0,
+            setName : function(name){
+                this.name = name;
+            },
+            getName : function(){
+                return  this.name;
+            },
+            setAge : function(age){
+                this.age = age;
+            },
+            
+            getAge : function(){
+                return this.age;
+            }
+        };
+
+        Employee.setAge(23);
+        Employee.setName("Ali");
+        document.write(Employee.getName() + "<br>");
+        document.write(Employee.getAge() + "<br>");
+
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="DOM.js" defer></script>
+    <script src="Task.js" defer></script>
+    <script src="Events.js" defer></script>
+    <style>
+        /* *{
+            white-space: pre;
+        } */
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo"><img src="/DOM/img/Logo.png" alt="Code With Abbas"></div>
+            <div class="menus">
+                <ul>
+                    <li class="nav-item"><a href="#home">Home</a></li>
+                    <li class="nav-item"><a href="#">About</a></li>
+                    <li class="nav-item"><a href="#">Contact</a></li>
+                    <li class="nav-item"><a href="#">ToDo</a></li>
+                </ul>
+            </div>
+            <div class="cta">
+                <button class="Join.btn btn-style"><a href="#">JOIN NOW</a></button>
+            </div>
+        </nav>
+        <h1 class="headline">Manage Tasks</h1>
+        <button class="learn-More-btn btn-style"><a href="#">Learn More</a></button>
+    </header>
+    <section class="todo-section">
+        <h2>Your Plan For Today?</h2>
+
+        <form action="" class="form-ToDO">
+            <input type="text" class="addToDo-input" placeholder="Add ToDo">
+            <input type="button" class="todo-btn" value="Add ToDo">
+            <!-- <button class="todo-btn btn-style"><a href="#">Add ToDo</a></button> -->
+        </form>
+
+        <ul class="todo-ul">
+            <li>List</li>
+        </ul>
+        
+        <div class="sign-up">
+            <h2>Sign Up Now.</h2>
+            <form action="" class="sign-up-form">
+                <label for="Username">Username</label>
+                <input type="text" id="Username" class="sign-up-input">
+                <label for="Password">Password</label>
+                <input type="text" id="Password" class="sign-up-input">
+                <label for="Confirm">Confirm Password</label>
+                <input type="text" id="Confirm" class="sign-up-input">
+                <label for="Email">Email</label>
+                <input type="text" id="Email" class="sign-up-input">
+                <label for="About">About Me</label>
+                <textarea name="About" id="About" cols="" rows="" class="sign-up-input">Type Here...</textarea>
+                <input type="submit" class="todo-btn" value="Submit" >
+
+            </form>
+        </div>
+    </section>
+    <section class="Static-and-Live">
+        <h1>Static List vs Live List</h1>
+        <ul class="todo-ul newUl">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    <pre>
+
+
+
+        
+
+
+
+
+
+
+
+
+
+        
+    </pre>
+    <button class="btn btn1">Button 1</button>
+    <button class="btn btn2">Button 2</button>
+    <button class="btn btn3">Button 3</button>
+    </section>
+    <pre>
+
+
+
+        
+
+
+
+
+
+
+
+
+
+        
+    </pre>
+    <h1 class="BCDheading">Event Bubbling | Capturing | Delegation</h1>
+    <main class="eventBCD">
+    <div class="grandparent box">GrandParent
+        <div class="parent box">Parent
+            <div class="child box">Child</div>
+        </div>
+    </div>
+    </main>
+
+    <script src=""></script>
+</body>
+
+</html>

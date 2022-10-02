@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+body {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn-style {
+    padding: 10px 30px;
+}
+
+.header {
+    background: url("/DOM/img/header-bg-image.jpeg") no-repeat, center center;
+    background-size: cover;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.navbar {
+    padding: 1% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 20%;
+}
+
+.logo img {
+    width: 100%;
+    min-height: 100%;
+}
+
+.navbar .menus {
+    width: 30%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    margin: 0px 10px;
+}
+
+ul li a {
+    color: white;
+}
+
+.cta {
+    width: 20%;
+}
+
+.Join-btn {
+    margin: 0;
+}
+
+.headline {
+    color: white;
+    font-size: 50px;
+    margin-top: 15%;
+}
+
+.learn-More-btn {
+    margin: 20px 0px 0px 0px;
+}
+
+
+
+/* 
+*************************************
+                Section
+************************************* */
+.todo-section {
+    margin: 10% auto;
+    color: black;
+    min-width: 70%;
+    width: 60%;
+    text-align: center;
+}
+
+.todo-section h2 {
+    margin: 1rem 0rem;
+    font-weight: 600;
+}
+
+.todo-btn {
+    background-color: rgb(44, 55, 63);
+}
+
+.todo-btn a {
+    color: white;
+}
+
+.form-ToDO {
+    display: flex;
+    justify-content: space-between;
+    min-height: 5vh;
+}
+
+.todo-section .form-ToDO input {
+    min-height: 100%;
+}
+
+.todo-section .form-ToDO .addToDo-input {
+    min-width: 78%;
+    padding: 0px 10px;
+}
+
+.todo-section .form-ToDO .todo-btn {
+    border: 0px;
+    min-width: 20%;
+    color: white;
+}
+
+.todo-ul {
+    font-size: 1rem;
+    justify-content: left;
+    display: block;
+    text-align: left;
+}
+
+.todo-ul li {
+    color: cyan;
+    padding: 0.7rem;
+    margin: 0;
+    margin-top: 1rem;
+    background: rgb(44, 55, 63);
+    text-transform: capitalize;
+}
+
+.sign-up {
+    margin-top: 10%;
+    background-color: #2c373f1c;
+    padding: 20px 0px;
+}
+
+.sign-up .sign-up-form {
+    margin: 5% 20%;
+}
+
+label {
+    display: block;
+    text-align: left;
+}
+
+.todo-section .sign-up .sign-up-input {
+    min-width: 100%;
+    margin: 0px 0px 15px 0px;
+    padding: 5px;
+}
+
+.todo-section .sign-up input[type="submit"] {
+    border: none;
+    color: white;
+    display: block;
+    min-height: 5vh;
+    min-width: 20%;
+}
+
+
+
+/* Class Which is Used In JS */
+.bg-dark-mode {
+    background-color: rgba(28, 25, 25, 0.438);
+}
+
+
+
+
+
+
+
+
+
+
+/* *************************************
+        Static Lists vs Live Lists  
+************************************* */
+.Static-and-Live{
+    text-align: center;
+    /* min-width: 60%; */
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* *************************************
+                Events 
+************************************* */
+.btn{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+}
+.btn1{
+    background: red;
+}
+.btn2{
+    background: green;
+}
+.btn3{
+    background: blue;
+}
+
+
+/* *************************************
+Event Bubbling | Capturing | Delegation 
+************************************* */
+.BCDheading{
+    text-align: center;
+}
+.eventBCD{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin-top: 10rem;
+}
+.box{
+    min-width: 100px;
+    min-height: 100px;
+    padding: 5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+    
+}
+
+.grandparent{
+    background: #b1d4e0;
+    color:black;
+  }
+  
+  .parent{
+    background: #145da0;
+  }
+  
+  .child{
+    background: #0c2d48;
+  }
+  

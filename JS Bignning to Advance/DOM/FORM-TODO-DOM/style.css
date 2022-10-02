@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 60%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin: 0px auto;
+}
+.container h2 {
+    margin: 1rem 0rem;
+    font-weight: bold;
+}
+.form-ToDo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 5vh;
+}
+
+
+.form-ToDo input {
+    min-height: 100%;
+}
+.form-ToDo .addToDo-input {
+    min-width: 78%;
+    padding: 0px 10px;
+}
+.todo-btn {
+    background-color: rgb(44, 55, 63);
+}
+.todo-btn a {
+    color: white;
+}
+.form-ToDo .todo-btn {
+    cursor: pointer;
+    border: 0px;
+    min-width: 20%;
+    color: white;
+}
+
+.todo-ul {
+    font-size: 1rem;
+    justify-content: left;
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+.todo-ul li {
+    color: white;
+    padding: 0.7rem;
+    margin-top: 1rem;
+    background: rgb(44, 55, 63);
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.LiBtn{
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    color: black;
+}
