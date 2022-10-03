@@ -384,6 +384,19 @@ const URL = "https://jsonplaceholder.typicode.com/posts";  // URL for GET Reques
 const XHR = new XMLHttpRequest();
 // console.log(XHR);
 
-console.log(XHR.readyState);   // Here We Check readyState Before Open()
+// console.log(XHR.readyState);   // 0 Here We Check readyState Before Open()
 XHR.open("GET",URL);
-console.log(XHR.readyState);   // Here We Check readyState Before Op
+// console.log(XHR.readyState);   // 1 Here We Check readyState After Open()
+
+XHR.onreadystatechange = function(){
+    // console.log(XHR.readyState);
+    if (XHR.readyState === 4) {
+        // console.log(XHR.response);
+        const response = XHR.response;
+        const data = JSON.parse(response);   // Convert String to Object for Parsing.
+        console.log(typeof data);
+        console.log(data);
+    }
+}
+XHR.send();
+// console.log(XHR.readyState);   // 1 Here We Check readyState After Send()
