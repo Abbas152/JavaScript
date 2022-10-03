@@ -483,4 +483,44 @@
 
 // // **********
 // Exercise Using XmlHTTPRequest Use Promise. Access Posts and Posts/4 
+const URL1 = "https://jsonplaceholder.typicode.com/posts";
 
+function sendRequest(method, url){
+    return new Promise((resolve, reject) => {
+        const XHR1 = new XMLHttpRequest();
+        XHR1.open(method,url)
+       XHR1.onload = function(){
+        if (XHR1.status >= 200 && XHR1.status < 300) {
+            resolve(XHR1.response)
+        } else {
+            reject(new Error("Something Went Wrong"));
+        }
+        XHR1.onerror = function(){
+            reject(new Error("Network Error"));
+        }
+    }
+        XHR1.send();
+    })
+}
+
+sendRequest("GET",URL1)
+.then(response=>{
+    const data1 = JSON.parse(response);
+    console.log(data1);
+    return data1;
+})
+.then(data1=>{
+    const ID = data1[3].id;
+    return ID;
+})
+.then(ID=>{
+    const URL2 = `${URL1}/${ID}`;
+    return sendRequest("GET", URL2);
+})
+.then(newResponse=>{
+    const newData = JSON.parse(newResponse);
+    console.log(newData);
+})
+.catch(error=>{
+    console.log(error);
+})
