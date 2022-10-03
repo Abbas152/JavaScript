@@ -380,23 +380,71 @@
 
 // Below Here We Call Constructor of XMLHttpRequest Object, And Store All These Object Methods in XHR
 
-const URL = "https://jsonplaceholder.typicode.com/posts";  // URL for GET Request
-const XHR = new XMLHttpRequest();
-// console.log(XHR);
+// const URL = "https://jsonplaceholder.typicode.com/posts";  // URL for GET Request
+// const XHR = new XMLHttpRequest();
+// // console.log(XHR);
 
-// console.log(XHR.readyState);   // 0 Here We Check readyState Before Open()
-XHR.open("GET",URL);
-// console.log(XHR.readyState);   // 1 Here We Check readyState After Open()
+// // console.log(XHR.readyState);   // 0 Here We Check readyState Before Open()
+// XHR.open("GET",URL);
+// // console.log(XHR.readyState);   // 1 Here We Check readyState After Open()
 
-XHR.onreadystatechange = function(){
-    // console.log(XHR.readyState);
-    if (XHR.readyState === 4) {
-        // console.log(XHR.response);
-        const response = XHR.response;
-        const data = JSON.parse(response);   // Convert String to Object for Parsing.
-        console.log(typeof data);
-        console.log(data);
-    }
-}
-XHR.send();
-// console.log(XHR.readyState);   // 1 Here We Check readyState After Send()
+
+
+// // **********
+// // // Method 1 for Check State during Changing 
+// // XHR.onreadystatechange = function(){
+// //     // console.log(XHR.readyState);
+// //     if (XHR.readyState === 4) {
+// //         // console.log(XHR.response);
+// //         const response = XHR.response;
+// //         const data = JSON.parse(response);   // Convert JSON data to JavaScript Object for Parsing.
+// //         console.log(typeof data);
+// //         console.log(data);
+// //     }
+// // }
+
+
+
+// // **********
+// // // Method 2 for Check State, It Works Only when State is 4. 
+// // // Here We Don't Need to Set Condition if readyState === 4 then show response like onreadystatechange.
+
+// // XHR.onload = function(){
+// //     console.log(XHR.readyState);
+// //     const response = XHR.response;
+// //     const data = JSON.parse(response);
+// //     console.log(data);
+// // }
+
+// XHR.send(); // Uncomment It
+// // console.log(XHR.readyState);   // 1 Here We Check readyState After Send()
+
+
+
+
+// *********************************************
+// *********************************************
+// // Error Handling
+// const URL = "https://jsonplaceholder.typicode.com/posts";
+// const XHR = new XMLHttpRequest();
+
+// XHR.open("GET", URL);
+// // Error Handling. Only Work If Status code is 200 and less than 300 
+// XHR.onload = function(){  // Only Works When readyState is 4.
+//     if (XHR.status >= 200 || XHR.status < 300 ) {    
+//         const data = JSON.parse(XHR.response);
+//         console.log(data);
+//     }
+// }
+
+// // Only Works When Networks Error Occurs
+// XHR.onerror = () => { 
+//     console.log("Network Error");
+// }
+// XHR.send();
+
+
+
+// Exercise Using XhrHTTPRequest. Access Posts and Posts/4 
+
+
