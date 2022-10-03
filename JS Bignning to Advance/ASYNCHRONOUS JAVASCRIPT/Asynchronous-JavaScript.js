@@ -367,8 +367,25 @@
 // ******
 // 1.) xmlHTTPRequest (old way of doing)
 // Start Here 
+
+// MDN Refference for XHR ReadyState 
+// Value	        State	                    Description
+// 0	            UNSENT	                    Client has been created. open() not called yet.
+// 1	            OPENED	                    open() has been called.
+// 2	            HEADERS_RECEIVED	        send() has been called, and headers and status are available.
+// 3	            LOADING	Downloading;        responseText holds partial data.
+// 4	            DONE	                    The operation is complete.
+
 // First of All We Need XMLHttpRequest Object Which Contains Some Methods and We can Use That Methods.
 
 // Below Here We Call Constructor of XMLHttpRequest Object, And Store All This Object Methods in XHR
+
+const URL = "https://jsonplaceholder.typicode.com/posts";
 const XHR = new XMLHttpRequest();
-console.log(XHR);
+
+
+console.log(XHR.readyState);   // Here We Check readyState Before Open()
+// console.log(XHR);
+
+XHR.open("GET",URL);
+console.log(XHR.readyState);   // Here We Check readyState Before Open()
