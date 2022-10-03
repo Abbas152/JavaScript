@@ -253,8 +253,8 @@
 //     }).catch((reject)=>{
 //         console.log("Biryani Cancel Because Material is Missing");
 //     })
-    
-    
+
+
 
 
 
@@ -321,9 +321,9 @@
 // .then((value)=>{
 //     console.log(value);
 // })  
-  
 
-  
+
+
 
 
 
@@ -431,7 +431,7 @@
 // XHR.open("GET", URL);
 // // Error Handling. Only Work If Status code is 200 and less than 300 
 // XHR.onload = function(){  // Only Works When readyState is 4.
-//     if (XHR.status >= 200 || XHR.status < 300 ) {    
+//     if (XHR.status >= 200 && XHR.status < 300 ) {    
 //         const data = JSON.parse(XHR.response);
 //         console.log(data);
 //     }
@@ -445,6 +445,42 @@
 
 
 
-// Exercise Using XhrHTTPRequest. Access Posts and Posts/4 
 
+// // **********
+// Exercise Using XmlHTTPRequest. Access Posts and Posts/4 
+
+// const URL1 = "https://jsonplaceholder.typicode.com/posts";
+// const XHR1 = new XMLHttpRequest();
+
+// XHR1.open("GET", URL1);
+// const UserGivenID = +prompt("Enter Post ID");
+
+// XHR1.onload = () => {
+//     if (XHR1.status >= 200 && XHR1.status < 300) {
+//         const data = JSON.parse(XHR1.response);
+//         console.log(data);
+
+
+//         const URL2 = `${URL1}/${UserGivenID}`;
+//         const XHR2 = new XMLHttpRequest();
+//         XHR2.open("GET", URL2);
+//         const ID = XHR2[UserGivenID];  // Example  XHR2[2] 
+//         XHR2.onload = () => {
+//             if (XHR2.status >= 200 && XHR2.status < 300) {
+//                 const data1 = JSON.parse(XHR2.response);
+//                 console.log("Your Given Post ID is Below");
+//                 console.log(data1.id);
+//                 console.log(data1);
+//             }
+//         }
+//         XHR2.send();
+//     }
+// }
+
+// XHR1.send();
+
+
+
+// // **********
+// Exercise Using XmlHTTPRequest Use Promise. Access Posts and Posts/4 
 
