@@ -571,3 +571,50 @@
 //     })
 
 
+
+
+
+
+
+// *********************************************
+// *********************************************
+// async await 
+
+
+// For Reference
+// fetch(URL1)
+//     .then(response => response.json())
+//     .then(data => {console.log(data);})
+
+
+// // ******
+// const URL1 = "https://jsonplaceholder.typicode.com/postss";
+
+// // It return always a Promise and We use Fetch in this Function.
+// // async before Function We Told that browser run that function asynchrounously,
+// // await before Fetch We Told that Browser wait until Fetch is resolved.
+// async function getPosts() {
+//     const response = await fetch(URL1);
+//     // console.log(response);
+//     if (!response.ok) { // Error Handling
+//         throw new Error("Something Went Wrong");
+//     }
+//     const data = await response.json();
+//     // console.log(data);
+//     return data; // It not Return Value, It returns Promise.
+// }
+
+// // // It return Promise 
+// // const data = getPosts();
+// // console.log(data);
+
+
+// // It Work Like That 
+// getPosts()
+// .then(data=>{
+//     console.log(data);
+// })
+// // Below catch method work only in case of network error. But We Can Error Handling. See Above If
+// .catch(error=>{
+//     console.log(error);
+// })
