@@ -515,6 +515,7 @@
 // })
 // .then(ID=>{
 //     const URL2 = `${URL1}/${ID}`;
+//     console.log(URL2);
 //     return sendRequest("GET", URL2);
 // })
 // .then(newResponse=>{
@@ -524,3 +525,29 @@
 // .catch(error=>{
 //     console.log(error);
 // })
+
+
+
+
+
+// *********************************************
+// *********************************************
+// Fetch
+// The Fetch API interface allows web browser to make HTTP requests to web servers.
+// No need for XMLHttpRequest anymore.
+// With the Help of Fetch We Can Request with a Single Line.
+// It Request "GET" Method Automatically. 
+// Fetch Always Return Promise.
+// Instead JSON.parse(respone) In Fetch We Use callback.json() for Getting Correct Values.
+
+const URL1 = "https://jsonplaceholder.typicode.com/posts";
+
+fetch(URL1) // It return Promise
+    .then(response=>{
+        const data = response.json();
+        console.log(data);
+        return data;
+    })
+    .then(data=>{
+        console.log(data);
+    })
