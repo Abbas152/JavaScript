@@ -540,14 +540,34 @@
 // Fetch Always Return Promise.
 // Instead JSON.parse(respone) In Fetch We Use callback.json() for Getting Correct Values.
 
-const URL1 = "https://jsonplaceholder.typicode.com/posts";
+// // ********
+// const URL1 = "https://jsonplaceholder.typicode.com/posts";
+// // It return Promise and Its Method by default is "GET", But We Can Use Other Methods.
+// fetch(URL1, {
+//     method: "POST",
+//     body: JSON.stringify({
+//         title: "Create Data using JSON",
+//         body: "Data",
+//         userId: 1,
+//     }),
+//     headers: { "Content-type": "application/json; charset=UTF-8", } // It is Mendatory, charset should skip.
+// })
+//     .then(response => {
+//         if (response.ok) {
+//             // console.log(response);
+//             const data = response.json();
+//             // console.log(data);
+//             return data;
+//         } else {
+//             throw new Error("Something Went Wrong");
+//         }
+//     })
+//     .then(data => {
+//         console.log(data);
+//     })
+//     .catch(error => {
+//         console.log("Inside Catch");
+//         console.log(error);
+//     })
 
-fetch(URL1) // It return Promise
-    .then(response=>{
-        const data = response.json();
-        console.log(data);
-        return data;
-    })
-    .then(data=>{
-        console.log(data);
-    })
+
