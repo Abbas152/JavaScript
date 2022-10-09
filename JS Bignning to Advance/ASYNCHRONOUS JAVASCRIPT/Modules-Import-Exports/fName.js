@@ -14,3 +14,9 @@ export const firstName = "Abbas";
 // import firstName from "../Modules-Import-Exports/fName.js";
 // But In this Method We Cannot Export Duplicate Export or Multiple Export 
 
+// Named Import or Multiple Import from a Single File
+// import {firstName},{},{} from "../Modules-Import-Exports/fName.js";
+// OR 
+// import {firstName, , ,} from "../Modules-Import-Exports/fName.js";
+
+

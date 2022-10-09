@@ -21,7 +21,7 @@
 
 
 // // iv) addEventListener is a Best Method
-// // addEventListener Need two Arguments. 1st Type of Event Which WE Need, 2nd Function We Want to Perform Task
+// // addEventListener Need two Arguments. 1st Type of Event Which We Need, 2nd Function We Want to Perform Task
 // // in the Case of Function Declaration the Value of This Keyword is Element Which we Select.  
 // // But In the Case of Arrow Function the Value of This Keyword is window Object. 
 // // The Value of This Keyword in Arrow Function 1 Level Up from Arrow Function.
