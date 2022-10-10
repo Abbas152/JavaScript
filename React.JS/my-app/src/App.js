@@ -4,8 +4,7 @@ import { Fragment } from 'react';
 console.log(Fragment);
 function App() {
   return (
-    // JSX Fragment
-   <div className="blank">Woo Hoo :)</div>
+    <div className="classhere"></div>
   );
 }
 
