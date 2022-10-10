@@ -1,11 +1,11 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { Fragment } from 'react';
-console.log(Fragment);
+import Navbar from "./components/Navbar.js";
 function App() {
   return (
     <>
-    
+<Navbar/>
     </>
   );
 }
