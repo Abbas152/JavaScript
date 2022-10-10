@@ -5,7 +5,8 @@ import Navbar from "./components/Navbar.js";
 function App() {
   return (
     <>
-<Navbar title= "TextUtils" About= "About" />
+    {/* Usually We Don't Change Props In React Function Component. */}
+<Navbar Title= "TextUtils" About= "About" /> 
     </>
   );
 }
