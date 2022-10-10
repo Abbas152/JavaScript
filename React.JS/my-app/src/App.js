@@ -5,7 +5,7 @@ console.log(Fragment);
 function App() {
   return (
     // JSX Fragment
-   <div className="blank">Hey Hey Boy</div>
+   <div className="blank">Woo Hoo :)</div>
   );
 }
 
