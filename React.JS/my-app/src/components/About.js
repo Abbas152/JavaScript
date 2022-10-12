@@ -2,6 +2,10 @@ import React, { useState } from "react";
 
 export default function About() {
 
+  const body = document.querySelector("body");
+  // console.log(body)
+  const [mybody, setMyBody] = useState(body.style.backgroundColor = "white");
+console.log(body);
   const [myStyle, setMyStyle] = useState({
     color: "black",
     backgroundColor: "white",
@@ -9,12 +13,20 @@ export default function About() {
   const [BtnText, setBtnText] = useState("Enable Dark Mode");
 
   const changeStyle = ()=>{
-    if (backgroundColor=="white") {
+    if (myStyle.backgroundColor==="white") {
         setMyStyle({
             color: "white",
             backgroundColor: "black",
         })
+        setMyBody(body.style.backgroundColor = "black")
         setBtnText("Enable Light Mode")
+    }else{
+      setMyStyle({
+        color: "black",
+        backgroundColor: "white",
+    })
+    setMyBody(body.style.backgroundColor = "white")
+    setBtnText("Enable Dark Mode")
     }
   }
   return (

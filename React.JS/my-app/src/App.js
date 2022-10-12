@@ -8,8 +8,8 @@ function App() {
     <>
       {/* Usually We Don't Change Props In React Function Component. */}
       <Navbar Title="TextUtils" About="About" />
-      {/* <TextForm heading="Enter Your Text To Analyze" /> */}
-      <About />
+      <TextForm heading="Enter Your Text To Analyze" />
+      {/* <About  /> */}
     </>
   );
 }
