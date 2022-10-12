@@ -35,7 +35,7 @@ function App() {
       {/* <Alert alert={alert} /> In This Object We Pass Alert State */}
       <Alert Alert={alert} />
 
-      <TextForm heading="Enter Your Text To Analyze" mode={mode} />
+      <TextForm heading="Enter Your Text To Analyze" mode={mode} showAlert={showAlert} />
       {/* <About  /> */}
     </>
   );
