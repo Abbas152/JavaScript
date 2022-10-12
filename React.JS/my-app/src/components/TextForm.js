@@ -21,7 +21,9 @@ export default function TextForm(props) {
     Text.select();
     navigator.clipboard.writeText(Text.value);
   };
-
+// *******************************************
+//      Miss Yeh Aap K Liye Hai
+// *******************************************
   const handlerRemoveSpaces = () => {
     const Text = text.split(/[ ]+/);
     setText(Text.join(" "));
