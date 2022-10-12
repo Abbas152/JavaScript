@@ -44,7 +44,11 @@ export default function TextForm(props) {
   // 2nd Variable is Updated and Set Value Which we Get in handlerUpperCaseClick Function
   const [text, setText] = useState("Enter Text Here");
   return (
-    <div className="container my-4">
+    <div className="container my-4" style={
+      {
+        color: props.mode === "dark" ? "white" : "black",
+      }
+    }>
       <h1 className="">{props.heading}</h1>
       <div className="mb-3">
         <label htmlFor="myBox" className="form-label">
@@ -56,6 +60,12 @@ export default function TextForm(props) {
           onChange={handleOnChange}
           id="myBox"
           rows="10"
+          style={
+            {
+              backgroundColor: props.mode === "dark" ? "transparent" : "white",
+              color: props.mode === "dark" ? "white" : "black",
+            }
+          }
         ></textarea>
       </div>
       <button className="btn btn-primary" onClick={handlerUpperCaseClick}>
@@ -81,8 +91,8 @@ export default function TextForm(props) {
         </p>
         <p>{0.008 * text.split(" ").length} Minutes to Read.</p>
         <h3>Preview</h3>
-        <p>{text}</p>
+        <p>{text.length>0?text:"Enter Your Text To The Above Box To Preview Here"}</p>
       </div>
-    </div>
+    </div >
   );
 }
