@@ -9,10 +9,13 @@ export default function TextForm(props) {
     // and then convert string to UpperCase
     const convertText = text.toUpperCase();
     setText(convertText); // Here We SetText.
+    props.showAlert("Converted To UpperCase", "success");
+
   };
   const handlerlowercaseClick = () => {
     const convertText = text.toLowerCase();
     setText(convertText); // Here We SetText.
+    props.showAlert("Converted To LowerCase", "success");
   };
 
 
@@ -20,6 +23,7 @@ export default function TextForm(props) {
     const Text = document.getElementById("myBox");
     Text.select();
     navigator.clipboard.writeText(Text.value);
+    props.showAlert("Text Copied", "success");
   };
 // *******************************************
 //      Miss Yeh Aap K Liye Hai ;)
@@ -27,12 +31,14 @@ export default function TextForm(props) {
   const handlerRemoveSpaces = () => {
     const Text = text.split(/[ ]+/);
     setText(Text.join(" "));
+    props.showAlert("Removed Extra Spaces", "success");
   };
 
 
   const handlerClearClick = () => {
     const convertText = "";
     setText(convertText); // Here We SetText.
+    props.showAlert("Text Box Cleared", "success");
   };
   const handleOnChange = (event) => {
     console.log("OnChange Clicked");
