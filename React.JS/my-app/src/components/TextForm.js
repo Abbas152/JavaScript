@@ -54,7 +54,7 @@ export default function TextForm(props) {
   return (
     <div className="container my-4" style={
       {
-        color: props.mode === "dark" ? "white" : "black",
+        color: props.darkMode === "dark" ? "white" : "black",
       }
     }>
       <h1 className="">{props.heading}</h1>
@@ -70,8 +70,8 @@ export default function TextForm(props) {
           rows="10"
           style={
             {
-              backgroundColor: props.mode === "dark" ? "transparent" : "white",
-              color: props.mode === "dark" ? "white" : "black",
+              backgroundColor: props.darkMode === "dark" ? "transparent" : "white",
+              color: props.darkMode === "dark" ? "white" : "black",
             }
           }
         ></textarea>
