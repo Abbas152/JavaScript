@@ -21,9 +21,17 @@ function App() {
     }, 2000);
   };
 
-
+const bodyClassRemove = ()=>{
+  document.body.classList.remove("bg-light");
+  document.body.classList.remove("bg-dark");
+  document.body.classList.remove("bg-primary");
+  document.body.classList.remove("bg-warning");
+  document.body.classList.remove("bg-success");
+  document.body.classList.remove("bg-danger");
+}
   const toggleDarkMode = (cls) => {
-    console.log(cls)
+    bodyClassRemove();
+    document.body.classList.add("bg-"+cls);
     if (darkMode === "light") {
       setMode("dark");
       document.body.style.backgroundColor = "#2125296b";
