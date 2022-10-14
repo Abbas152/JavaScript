@@ -20,6 +20,18 @@ function App() {
       setAlert(alert);
     }, 2000);
   };
+
+  function checkedOnClick(el){
+
+    // Select all checkboxes by class
+    var checkboxesList = document.getElementsByClassName("form-check-input");
+    for (var i = 0; i < checkboxesList.length; i++) {
+       checkboxesList.item(i).checked = false; // Uncheck all checkboxes
+    }
+
+    el.checked = true; // Checked clicked checkbox
+ }
+
   const toggleDarkMode = () => {
     if (darkMode === "light") {
       setMode("dark");
@@ -27,8 +39,8 @@ function App() {
       showAlert("DarkMode is Enabled Now", "success");
     } else {
       if (greenMode === "green") {
-        setMode("light");
-        document.body.style.backgroundColor = "white";
+        setMode("green");
+        document.body.style.backgroundColor = "#006c0d";
         showAlert("LightMode is Enabled Now", "success");
       }
       else{
@@ -45,9 +57,9 @@ function App() {
       showAlert("GreenMode is Enabled Now", "success");
     } else {
       if (darkMode === "dark") {
-        setGreenMode("light");
-        document.body.style.backgroundColor = "white";
-        showAlert("LightMode is Enabled Now", "success");
+        setGreenMode("dark");
+        document.body.style.backgroundColor = "#2125296b";
+        showAlert("DarkMode is Enabled Now", "success");
       }
       else{
         setGreenMode("light");
@@ -65,6 +77,7 @@ function App() {
         greenMode={greenMode}
         toggleDarkMode={toggleDarkMode}
         toggleGreenMode={toggleGreenMode}
+        checkedOnClick={checkedOnClick}
       />
       {/* <Navbar Title="TextUtils" About="About" /> */}
       {/* <Alert alert={alert} /> In This Object We Pass Alert State */}

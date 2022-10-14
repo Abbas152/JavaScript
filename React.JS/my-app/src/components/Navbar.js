@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 {/* Usually We Don't Change Props In React Function Component. */ }
 export default function Navbar(props) {
   return (
-    <nav className={`navbar navbar-expand-lg navbar-${props.darkMode || props.greenMode} bg-${props.darkMode}`}>
+    <nav className={`navbar navbar-expand-lg navbar-${props.darkMode} navbar-${props.greenMode} bg-green bg-${props.darkMode} `}>
       <div className="container-fluid">
         <a className="navbar-brand" href="/">{props.Title}</a> {/* Props  */}
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,11 +33,11 @@ export default function Navbar(props) {
           </ul>
           {/* Below We Use Ternary Operator  */}
           <div className={`form-check form-switch text-${props.darkMode === "light"?"dark":"light"} mx-5`}>
-            <input className="form-check-input" onClick={props.toggleDarkMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
+            <input className="form-check-input"  onClick={props.toggleDarkMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
               <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable DarkMode</label>
           </div>
-          <div className={`form-check form-switch text-${props.greenMode === "light"?"dark":"light"} mx-5`}>
-            <input className="form-check-input" onClick={props.toggleGreenMode} type="checkbox" role="switch" id="green"/>
+          <div className={`form-check form-switch text-${props.greenMode === "light"?"dark":"white"} mx-5`}>
+            <input className="form-check-input"  onClick={props.toggleGreenMode} type="checkbox" role="switch" id="green"/>
               <label className="form-check-label" htmlFor="green">Enable GreenMode</label>
           </div>
           <form className="d-flex" role="search">
