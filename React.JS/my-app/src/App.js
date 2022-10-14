@@ -7,7 +7,7 @@ import TextForm from "./components/TextForm";
 // import About from "./components/About";
 import Alert from "./components/Alert";
 function App() {
-  const [darkMode, setMode] = useState(null);
+  const [darkMode, setMode] = useState("light");
   const [greenMode, setGreenMode] = useState("light");
   const [alert, setAlert] = useState(null);
 
@@ -21,26 +21,39 @@ function App() {
     }, 2000);
   };
   const toggleDarkMode = () => {
-    if (darkMode === null) {
+    if (darkMode === "light") {
       setMode("dark");
       document.body.style.backgroundColor = "#2125296b";
       showAlert("DarkMode is Enabled Now", "success");
     } else {
-      setMode("light");
-      document.body.style.backgroundColor = "white";
-      showAlert("LightMode is Enabled Now", "success");
+      if (greenMode === "green") {
+        setMode("light");
+        document.body.style.backgroundColor = "white";
+        showAlert("LightMode is Enabled Now", "success");
+      }
+      else{
+        setMode("light");
+        document.body.style.backgroundColor = "white";
+        showAlert("LightMode is Enabled Now", "success");
+      }
     }
   };
   const toggleGreenMode = () => {
     if (greenMode === "light") {
-      console.log("Green Mode Active");
       setGreenMode("green");
       document.body.style.backgroundColor = "#006c0d";
       showAlert("GreenMode is Enabled Now", "success");
     } else {
-      setMode("light");
-      document.body.style.backgroundColor = "white";
-      showAlert("LightMode is Enabled Now", "success");
+      if (darkMode === "dark") {
+        setGreenMode("light");
+        document.body.style.backgroundColor = "white";
+        showAlert("LightMode is Enabled Now", "success");
+      }
+      else{
+        setGreenMode("light");
+        document.body.style.backgroundColor = "white";
+        showAlert("LightMode is Enabled Now", "success");
+      }
     }
   };
   return (
