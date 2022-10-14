@@ -32,9 +32,17 @@ export default function Navbar(props) {
             </li>
           </ul>
           {/* Below We Use Ternary Operator  */}
-          <div className={`form-check form-switch text-${props.mode === "light"?"dark":"light"} mx-5`}>
-            <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
-              <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable DarkMode</label>
+          <div className={`form-check form-switch text-${props.mode === "light"?"dark":"light"} mx-2`}>
+            <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="Dark"/>
+              <label className="form-check-label" htmlFor="Dark">Enable DarkMode</label>
+          </div>
+          <div className={`form-check form-switch text-${props.mode === "light"?"dark":"light"} mx-2`}>
+            <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="Green"/>
+              <label className="form-check-label" htmlFor="Green">Enable GreenMode</label>
+          </div>
+          <div className={`form-check form-switch text-${props.mode === "light"?"dark":"light"} mx-2`}>
+            <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="Grey"/>
+              <label className="form-check-label" htmlFor="Grey">Enable GreyScale</label>
           </div>
           <form className="d-flex" role="search">
             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
