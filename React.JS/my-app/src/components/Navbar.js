@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 {/* Usually We Don't Change Props In React Function Component. */ }
 export default function Navbar(props) {
   return (
-    <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
+    <nav className={`navbar navbar-expand-lg navbar-${props.DarkMode} bg-${props.DarkMode}`}>
       <div className="container-fluid">
         <a className="navbar-brand" href="/">{props.Title}</a> {/* Props  */}
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,16 +32,16 @@ export default function Navbar(props) {
             </li>
           </ul>
           {/* Below We Use Ternary Operator  */}
-          <div className={`form-check form-switch text-${props.mode === "light"?"dark":"light"} mx-2`}>
-            <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="Dark"/>
+          <div className={`form-check form-switch text-${props.darkMode === "light"?"dark":"light"} mx-2`}>
+            <input className="form-check-input" onClick={props.DarkMode} type="checkbox" role="switch" id="Dark"/>
               <label className="form-check-label" htmlFor="Dark">Enable DarkMode</label>
           </div>
-          <div className={`form-check form-switch text-${props.mode === "light"?"dark":"light"} mx-2`}>
-            <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="Green"/>
+          <div className={`form-check form-switch text-${props.greenMode === "light"?"dark":"light"} mx-2`}>
+            <input className="form-check-input" onClick={props.GreenMode} type="checkbox" role="switch" id="Green"/>
               <label className="form-check-label" htmlFor="Green">Enable GreenMode</label>
           </div>
-          <div className={`form-check form-switch text-${props.mode === "light"?"dark":"light"} mx-2`}>
-            <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="Grey"/>
+          <div className={`form-check form-switch text-${props.greyMode === "light"?"dark":"light"} mx-2`}>
+            <input className="form-check-input" onClick={props.GreyMode} type="checkbox" role="switch" id="Grey"/>
               <label className="form-check-label" htmlFor="Grey">Enable GreyScale</label>
           </div>
           <form className="d-flex" role="search">
