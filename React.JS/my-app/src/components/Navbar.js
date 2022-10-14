@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 {/* Usually We Don't Change Props In React Function Component. */ }
 export default function Navbar(props) {
   return (
-    <nav className={`navbar navbar-expand-lg navbar-${props.darkMode} bg-${props.darkMode}`}>
+    <nav className={`navbar navbar-expand-lg navbar-${props.darkMode || props.greenMode} bg-${props.darkMode}`}>
       <div className="container-fluid">
         <a className="navbar-brand" href="/">{props.Title}</a> {/* Props  */}
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
