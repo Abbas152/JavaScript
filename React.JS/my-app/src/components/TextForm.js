@@ -71,7 +71,9 @@ export default function TextForm(props) {
           style={
             {
               backgroundColor: props.darkMode === "dark" ? "transparent" : "white",
+              // backgroundColor: props.greenMode === "dark" ? "transparent" : "white",
               color: props.darkMode === "dark" ? "white" : "black",
+              // color: props.greenMode === "dark" ? "white" : "black",
             }
           }
         ></textarea>
