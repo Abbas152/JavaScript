@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 
-export default function About() {
+export default function About(props) {
 
-  const body = document.querySelector("body");
-  // console.log(body)
-  const [mybody, setMyBody] = useState(body.style.backgroundColor = "white");
-console.log(body);
+ 
   const [myStyle, setMyStyle] = useState({
     color: "black",
     backgroundColor: "white",
@@ -18,19 +15,20 @@ console.log(body);
             color: "white",
             backgroundColor: "black",
         })
-        setMyBody(body.style.backgroundColor = "black")
+        // setMyBody(body.style.backgroundColor = "black")
         setBtnText("Enable Light Mode")
     }else{
       setMyStyle({
         color: "black",
         backgroundColor: "white",
     })
-    setMyBody(body.style.backgroundColor = "white")
+    // setMyBody(body.style.backgroundColor = "white")
     setBtnText("Enable Dark Mode")
     }
   }
   return (
-    <div className="container my-4" style={myStyle}>
+    
+    <div className="container my-4" style={myStyle} >
       <h2 className="my-4">About Us</h2>
       <div
         className="accordion"
